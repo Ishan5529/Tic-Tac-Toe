@@ -1,0 +1,112 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.container::before {
+	content: '';
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#heading{
+	font-size: 4rem;
+	color: rgb(228, 209, 240);
+	font-family:cursive;
+	transition-duration: 0.5s;
+}
+
+#heading:hover{
+	transform: scale(1.1);
+	color: rgb(255, 255, 255);
+	text-shadow: 10px 10px 3px rgb(62, 51, 51);
+}
+
+.grid {
+	margin: 50px 0px 30px 0px;
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	column-gap: 10px;
+	row-gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-box {
+	height: 100px;
+	width: 100px;
+	border: 3px solid rgb(6, 6, 6);
+	border-radius: 10px;
+	background-color: rgb(208, 182, 224);
+	display: flexbox;
+	text-align: center;
+	line-height: 100px;
+	font-size: 40px;
+	text-shadow: 5px 5px 3px rgb(62, 51, 51);
+	transition-duration: 0.3s;
+}
+
+.grid-box:hover {
+	transform: scale(1.13);
+	text-shadow: -1px 5px 3px rgb(62, 51, 51);
+	box-shadow: 0px 0px 50px 2px rgb(121, 36, 149);
+}
+
+.win-div {
+	background-color: rgb(87, 233, 104);
+	box-shadow: 0px 0px 15px 1px rgb(166, 255, 176);
+	border: none;
+	transform: scale(1.13);
+}
+
+.result {
+	margin-bottom: 20px;
+	height: 40px;
+	width: 150px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+#reset {
+	height: 40px;
+	width: 120px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	font-weight: bold;
+	font-size: 20px;;
+	font-family: cursive;
+	color: white;
+	background-color: rgb(131, 58, 205);
+	transition-duration: 0.45s;
+}
+
+#reset:hover {
+	transform: scale(1.3);
+	background-color: rgb(255, 95, 95);
+	box-shadow: 0px 0px 30px 2px rgb(255, 131, 131);
+}
